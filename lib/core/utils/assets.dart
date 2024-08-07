@@ -1,0 +1,7 @@
+ const assetsImage = 'asstes/images/';
+
+class  AssetsImages {
+
+static const logo = 'assets/images/Logo.png';
+
+}
