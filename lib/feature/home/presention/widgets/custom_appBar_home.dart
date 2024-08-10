@@ -7,11 +7,11 @@ class CustomAppBarHomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 40),
+      padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 30),
       child: Row(
         children: [
       Image.asset(AssetsImages.logo,height: 20.1,width: 75,),
-      Spacer(),
+      const Spacer(),
       IconButton(onPressed: (){}, icon: const Icon(Icons.search,color: Colors.white,))
       ],),
     );
