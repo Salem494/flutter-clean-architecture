@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_clean_architucture/core/helper/route_helper.dart';
+import 'package:flutter_clean_architucture/core/utils/app_route.dart';
+import 'package:flutter_clean_architucture/core/utils/app_route_path.dart';
 import 'package:flutter_clean_architucture/core/utils/assets.dart';
 import 'package:flutter_clean_architucture/feature/home/presention/views/home_view.dart';
 import 'package:flutter_clean_architucture/feature/splash/presentation/widgets/custom_slide_animation.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -20,7 +23,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
   void initState() {
   super.initState();
   initSlideAnmition();
-  Future.delayed(const Duration(seconds: 3),() => Get.to(HomeView(), duration: const Duration(seconds: 2),transition: Transition.fadeIn),);
+  Future.delayed(const Duration(seconds: 3),() => AppRouteHelper.pushNamedRoute(context,AppRoutePath.homeView));
   }
 
 
