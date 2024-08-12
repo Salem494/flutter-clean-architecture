@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_clean_architucture/core/helper/route_helper.dart';
+import 'package:flutter_clean_architucture/core/utils/app_route_path.dart';
 import 'package:flutter_clean_architucture/core/utils/assets.dart';
 
 class CustomAppBarHomeView extends StatelessWidget {
@@ -12,7 +14,9 @@ class CustomAppBarHomeView extends StatelessWidget {
         children: [
       Image.asset(AssetsImages.logo,height: 20.1,width: 75,),
       const Spacer(),
-      IconButton(onPressed: (){}, icon: const Icon(Icons.search,color: Colors.white,))
+      IconButton(onPressed: (){
+        AppRouteHelper.pushNamedRoute(context, AppRoutePath.searchView);
+      }, icon: const Icon(Icons.search,color: Colors.white,))
       ],),
     );
   }

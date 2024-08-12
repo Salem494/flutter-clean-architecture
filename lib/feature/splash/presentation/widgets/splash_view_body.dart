@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architucture/core/helper/route_helper.dart';
-import 'package:flutter_clean_architucture/core/utils/app_route.dart';
 import 'package:flutter_clean_architucture/core/utils/app_route_path.dart';
 import 'package:flutter_clean_architucture/core/utils/assets.dart';
-import 'package:flutter_clean_architucture/feature/home/presention/views/home_view.dart';
 import 'package:flutter_clean_architucture/feature/splash/presentation/widgets/custom_slide_animation.dart';
-import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
 
   @override
   State<SplashViewBody> createState() => _SplashViewBodyState();
+
 }
 
 class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProviderStateMixin {
- late AnimationController animationController;
- late  Animation<Offset> slideAnimation;
+
+
+  late AnimationController animationController;
+  late  Animation<Offset> slideAnimation;
 
 
  @override
