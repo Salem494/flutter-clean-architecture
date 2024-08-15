@@ -2,12 +2,11 @@ import 'package:flutter/animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_clean_architucture/core/utils/app_route_path.dart';
 import 'package:flutter_clean_architucture/feature/book_details/presentation/views/book_details_view.dart';
-import 'package:flutter_clean_architucture/feature/book_details/presentation/widgets/book_details_body_view.dart';
 import 'package:flutter_clean_architucture/feature/home/presention/views/home_view.dart';
 import 'package:flutter_clean_architucture/feature/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
-
 import '../../feature/search/presentition/views/search_view.dart';
+
 
 class AppRoute {
   AppRoute._();
@@ -27,15 +26,15 @@ class AppRoute {
       ),
       GoRoute(
         pageBuilder: (context, state) {
-          return CustomBuildTransitionPage(BookDetailsView());
+          return CustomBuildTransitionPage(const  BookDetailsView());
         },
         path: AppRoutePath.bookDetailsView,
-        builder: (context, state) => BookDetailsView(),
+        builder: (context, state) =>const BookDetailsView(),
       ),
 
       GoRoute(
         path: AppRoutePath.searchView,
-        builder: (context, state) => SearchView(),
+        builder: (context, state) => const SearchView(),
       ),
     ],
   );

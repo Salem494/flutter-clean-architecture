@@ -44,12 +44,10 @@ class CustomBestSellerItem extends StatelessWidget {
                        const SizedBox(height: 10,),
                        const  Text("JK Harry",style:AppStyles.text14 ,),
                        const SizedBox(height:15,),
-           const Padding(
+            Padding(
                 padding: EdgeInsets.only(right: 30,),
                 child:  Row(
-                
                 children: [
-                 
                 Text("99 \$",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 16,decoration: TextDecoration.none),),
                 Spacer(),
                 Text( "4.5(12.02)",style: AppStyles.text14,)
